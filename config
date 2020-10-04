@@ -159,6 +159,7 @@ bindsym $mod+g              exec chromium
 bindsym $mod+Shift+g        exec chromium --incognito
 bindsym $mod+Mod2+Print     exec --no-startup-id flameshot gui
 bindsym $mod+p              exec --no-startup-id dmenu_run -m dmenumon -fn 'MS sans-serif-12'
+bindsym $mod+Mod2+F12       exec --no-startup-id redshift-gtk
 
 # bright
 set $i3_bright exec pkill -SIGRTMIN+1 i3blocks
@@ -195,4 +196,3 @@ exec --no-startup-id amixer set Speaker 70%
 exec --no-startup-id amixer set Headphone 30%
 exec --no-startup-id feh --no-fehbg --bg-max ~/.config/i3/mirai.png
 exec --no-startup-id ~/.config/i3/scripts/ibus.sh
-exec --no-startup-id redshift-gtk
