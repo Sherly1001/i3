@@ -153,8 +153,8 @@ bindsym $mod+Shift+q kill
 bindsym $mod+Shift+e exit
 
 # binding keys
-bindsym $mod+Return         exec sakura
-bindsym $mod+Shift+Return   exec terminator
+bindsym $mod+Return         workspace $ws2, exec sakura
+bindsym $mod+Shift+Return   exec sakura
 bindsym $mod+g              exec chromium
 bindsym $mod+Shift+g        exec chromium --incognito
 bindsym $mod+Mod2+Print     exec --no-startup-id flameshot gui
@@ -180,10 +180,6 @@ focus_follows_mouse no
 
 gaps inner 20
 smart_gaps on
-
-for_window [class="code-oss"] move to workspace $ws3, workspace $ws3
-for_window [class="Sakura"] move to workspace $ws2, workspace $ws2
-for_window [class="Terminator"] floating enable
 
 # startup commands
 exec --no-startup-id xinput set-prop 'DELL0844:00 04F3:3074 Touchpad' 'libinput Tapping Enabled' 1
