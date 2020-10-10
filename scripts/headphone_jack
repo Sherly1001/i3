@@ -1,0 +1,2 @@
+event=jack/headphone.*
+action=pkill -SIGRTMIN+2 i3blocks
