@@ -160,6 +160,7 @@ bindsym $mod+Shift+g        exec chromium --incognito
 bindsym $mod+Mod2+Print     exec --no-startup-id flameshot gui
 bindsym $mod+p              exec --no-startup-id dmenu_run -m dmenumon -fn 'Noto Sans-12'
 bindsym $mod+Mod2+F12       exec --no-startup-id redshift-gtk
+bindsym $mod+Ctrl+L         exec --no-startup-id betterlockscreen -l dimblur
 
 # bright
 set $i3_bright exec pkill -SIGRTMIN+1 i3blocks

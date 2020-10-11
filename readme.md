@@ -17,6 +17,7 @@ git clone https://github.com/Sherly1001/i3 ~/.config/i3
 - [i3-gaps](https://github.com/Airblader/i3) - main program
 - [i3blocks](https://github.com/vivien/i3blocks) - for i3 bar
 - [xtitle](https://github.com/baskerville/xtitle) - to show window title
+- [betterlockscreen](https://github.com/pavanjadhaw/betterlockscreen) - lockscreen for i3
 - [numlockx](https://github.com/rg3/numlockx) - turn on numlock when start
 - [picom](https://github.com/yshui/picom) - for transparent windows
 - [flameshot](https://github.com/flameshot-org/flameshot) - to take screenshot
