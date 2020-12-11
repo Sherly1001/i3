@@ -185,6 +185,7 @@ for_window [class="copyq"] floating enable
 
 # startup commands
 exec --no-startup-id polybar -r -c ~/.config/i3/polybar.conf bar1
+exec --no-startup-id xautolock -detectsleep -time 5 -locker 'slock' -killtime 10 -killer 'systemctl suspend'
 exec --no-startup-id xinput set-prop 'DELL0844:00 04F3:3074 Touchpad' 'libinput Tapping Enabled' 1
 exec --no-startup-id xinput set-prop 'DELL0844:00 04F3:3074 Touchpad' 'libinput Natural Scrolling Enabled' 1
 exec --no-startup-id picom --config ~/.config/i3/picom.conf
