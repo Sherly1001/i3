@@ -162,15 +162,13 @@ bindsym $mod+p              exec --no-startup-id dmenu_run -fn 'Noto Sans-12' -l
 bindsym $mod+Mod2+F12       exec --no-startup-id redshift-gtk
 
 # bright
-set $i3_bright exec pkill -SIGRTMIN+1 i3blocks
-bindsym Mod2+XF86MonBrightnessUp   exec --no-startup-id light -A 5, $i3_bright
-bindsym Mod2+XF86MonBrightnessDown exec --no-startup-id light -U 5, $i3_bright
+bindsym Mod2+XF86MonBrightnessUp   exec --no-startup-id light -A 5
+bindsym Mod2+XF86MonBrightnessDown exec --no-startup-id light -U 5
 
 # volume
-set $i3_volume exec pkill -SIGRTMIN+2 i3blocks
-bindsym Mod2+XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/amixer.sh 2+, $i3_volume
-bindsym Mod2+XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/amixer.sh 2-, $i3_volume
-bindsym Mod2+XF86AudioMute        exec --no-startup-id amixer set Master toggle, $i3_volume
+bindsym Mod2+XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/amixer.sh 2+
+bindsym Mod2+XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/amixer.sh 2-
+bindsym Mod2+XF86AudioMute        exec --no-startup-id amixer set Master toggle
 
 # settings
 default_border pixel 3
