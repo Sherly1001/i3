@@ -192,7 +192,7 @@ exec --no-startup-id picom --config ~/.config/i3/picom.conf
 exec --no-startup-id numlockx
 exec --no-startup-id flameshot
 exec --no-startup-id copyq
-exec --no-startup-id amixer set Master 100
+exec --no-startup-id amixer set Master 100%
 exec --no-startup-id amixer set Speaker 70%
 exec --no-startup-id amixer set Headphone 30%
 exec --no-startup-id feh --no-fehbg --bg-max ~/.config/i3/mirai.png
