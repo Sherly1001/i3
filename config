@@ -177,6 +177,7 @@ hide_edge_borders both
 focus_follows_mouse no
 
 gaps inner 20
+gaps top 26
 # smart_gaps on
 
 for_window [class="copyq"] floating enable
