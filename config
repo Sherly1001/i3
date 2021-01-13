@@ -195,7 +195,7 @@ exec --no-startup-id copyq
 exec --no-startup-id amixer set Master 100%
 exec --no-startup-id amixer set Speaker 70%
 exec --no-startup-id amixer set Headphone 30%
-exec --no-startup-id feh --no-fehbg --bg-max ~/.config/i3/mirai.png
+exec --no-startup-id feh --no-fehbg --bg-fill ~/.config/i3/fumiru_art.png
 
 # startup applications
 exec telegram-desktop
