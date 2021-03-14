@@ -155,8 +155,8 @@ bindsym $mod+Shift+e exit
 # binding keys
 bindsym $mod+Return         workspace $ws2, exec sakura
 bindsym $mod+Shift+Return   exec sakura
-bindsym $mod+g              exec chromium
-bindsym $mod+Shift+g        exec chromium --incognito
+bindsym $mod+g              exec google-chrome-stable
+bindsym $mod+Shift+g        exec google-chrome-stable --incognito
 bindsym $mod+Mod2+Print     exec --no-startup-id flameshot gui
 bindsym $mod+p              exec --no-startup-id dmenu_run -fn 'Noto Sans-12' -l 5 -sb '#4a4a56'
 bindsym $mod+Mod2+F12       exec --no-startup-id redshift-gtk
@@ -166,8 +166,10 @@ bindsym Mod2+XF86MonBrightnessUp   exec --no-startup-id light -A 5
 bindsym Mod2+XF86MonBrightnessDown exec --no-startup-id light -U 5
 
 # volume
-bindsym Mod2+XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/amixer.sh 2+
-bindsym Mod2+XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/amixer.sh 2-
+# bindsym Mod2+XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/amixer.sh 2+
+# bindsym Mod2+XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/amixer.sh 2-
+bindsym Mod2+XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5%
+bindsym Mod2+XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5%
 bindsym Mod2+XF86AudioMute        exec --no-startup-id amixer set Master toggle
 
 # settings
@@ -181,7 +183,7 @@ gaps top 26
 # smart_gaps on
 
 for_window [class="copyq"] floating enable
-for_window [class="TelegramDesktop"] move window to workspace $ws4
+assign [class="TelegramDesktop"] $ws4
 
 # startup commands
 exec --no-startup-id polybar -r -c ~/.config/i3/polybar.conf bar1
@@ -192,9 +194,6 @@ exec --no-startup-id picom --config ~/.config/i3/picom.conf
 exec --no-startup-id numlockx
 exec --no-startup-id flameshot
 exec --no-startup-id copyq
-exec --no-startup-id amixer set Master 100%
-exec --no-startup-id amixer set Speaker 70%
-exec --no-startup-id amixer set Headphone 30%
 exec --no-startup-id feh --no-fehbg --bg-fill ~/.config/i3/fumiru_art.png
 
 # startup applications
