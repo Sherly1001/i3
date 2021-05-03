@@ -1,0 +1,2 @@
+event=video/brightness.*
+action=kill -2 `cat /tmp/brightness.pid`

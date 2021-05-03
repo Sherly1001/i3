@@ -8,3 +8,4 @@ ExecStart=/usr/bin/slock
 
 [Install]
 WantedBy=suspend.target
+WantedBy=hibernate.target
