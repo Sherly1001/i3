@@ -183,6 +183,8 @@ gaps top 26
 # smart_gaps on
 
 for_window [class="copyq"] floating enable
+for_window [class="Feh"] floating enable
+for_window [class="Blueberry.py"] floating enable
 assign [class="TelegramDesktop"] $ws4
 
 # startup commands
@@ -197,4 +199,5 @@ exec --no-startup-id copyq
 exec --no-startup-id feh --no-fehbg --bg-fill ~/.config/i3/fumiru_art.png
 
 # startup applications
-exec telegram-desktop
+# exec telegram-desktop
+exec google-chrome-stable
