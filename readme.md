@@ -29,7 +29,7 @@ git clone https://github.com/Sherly1001/i3 ~/.config/i3
 - [pulseaudio](https://archlinux.org/packages/extra/x86_64/pulseaudio) - same as amixer
 - [ibus](https://www.archlinux.org/packages/extra/x86_64/ibus) - input bus
 - [acpid](https://www.archlinux.org/packages/community/x86_64/acpid) - driver listener
-- [dmenu](https://archlinux.org/packages/community/x86_64/dmenu) - dynamic menu
+- [rofi](https://archlinux.org/packages/community/x86_64/rofi) - application launcher
 - [dunst](https://archlinux.org/packages/community/x86_64/dunst) - notification daemon
 - [sakura](https://archlinux.org/packages/community/x86_64/sakura) - terminal
 

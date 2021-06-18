@@ -159,8 +159,8 @@ bindsym $mod+Shift+Return   exec sakura
 bindsym $mod+g              exec google-chrome-stable
 bindsym $mod+Shift+g        exec google-chrome-stable --incognito
 bindsym $mod+Mod2+Print     exec --no-startup-id flameshot gui
-bindsym $mod+p              exec --no-startup-id dmenu_run -fn 'Noto Sans-12' -l 5 -sb '#4a4a56'
-bindsym $mod+Mod2+F12       exec --no-startup-id redshift-gtk
+bindsym $mod+p              exec --no-startup-id rofi -show run
+bindsym $mod+Mod2+F12       exec --no-startup-id redshift-gtk -l 21.11:106.4 -t 8000:3000
 
 # bright
 bindsym Mod2+XF86MonBrightnessUp   exec --no-startup-id light -A 5
@@ -217,3 +217,4 @@ exec --no-startup-id ~/.config/i3/scripts/wallpaper.sh
 # startup applications
 # exec telegram-desktop
 exec google-chrome-stable
+exec discord

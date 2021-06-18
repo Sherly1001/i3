@@ -1,0 +1,8 @@
+configuration {
+    font: "Consolas 16";
+    lines: 10;
+    show-icons: true;
+    fullscreen: false;
+    fake-transparency: true;
+    theme: "noob";
+}
