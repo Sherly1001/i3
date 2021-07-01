@@ -1,16 +1,13 @@
 #!/bin/bash
 
-cat > ~/.xinitrc <<end
-#!/bin/bash
+echo "exec i3" > ~/.xinitrc
 
-export GTK_THEME=Adwaita:dark
+sudo cat | sudo tee -a /etc/environment <<end
+GTK_THEME=Adwaita:dark
 
-export XMODIFIERS='@im=ibus'
-export GTK_IM_MODULE='ibus'
-export QT_IM_MODULE='ibus'
-ibus-daemon -drx
-
-exec i3
+XMODIFIERS='@im=ibus'
+GTK_IM_MODULE='ibus'
+QT_IM_MODULE='ibus'
 end
 
 sudo cp ./scripts/brightness /etc/acpi/events/

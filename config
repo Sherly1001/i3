@@ -211,6 +211,7 @@ exec --no-startup-id numlockx
 exec --no-startup-id flameshot
 exec --no-startup-id copyq
 exec --no-startup-id dunst
+exec --no-startup-id ibus-daemon -drx
 exec --no-startup-id ~/.config/i3/scripts/wallpaper.sh
 # exec --no-startup-id feh --no-fehbg --bg-fill ~/.config/i3/fumiru_art.png
 
