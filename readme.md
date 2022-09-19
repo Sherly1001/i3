@@ -1,3 +1,6 @@
+# Archived
+This repo was merged in my [dotfiles](https://github.com/Sherly1001/dotfiles).
+
 # My i3wm's configures
 First goto [dependent packages](#dependent-packages) and download all.
 ```sh
